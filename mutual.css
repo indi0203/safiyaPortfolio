@@ -16,17 +16,19 @@ img {
     width: 100%;
 }
 
+
 /*----------menu---------*/
 
-.header {
+#navbar {
     padding: 10px 10px;
     margin-left: 20px;
     margin-right: 20px;
+    position: fixed;
 }
 
 .logo img {
     width: 60px;
-    position: fixed;
+    /*    position: fixed;*/
 }
 
 
@@ -36,8 +38,9 @@ img {
 }
 
 #menuknap {
+
     top: 10px;
-    right: 20px;
+    right: 30px;
     transform-origin: top right;
     font-size: 30px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -51,10 +54,9 @@ img {
     text-align: right;
     transition: transform 0.3s;
     list-style: none;
-    right: 20px;
-    top: 40px;
+    right: 30px;
+    top: 50px;
     cursor: pointer;
-
 
     /*
     transition: 0.5s;
@@ -75,6 +77,7 @@ img {
     color: pink;
 }
 
+
 #menu a {
     text-decoration: none;
     cursor: pointer;
@@ -85,10 +88,44 @@ img {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
+@media (max-width: 800px) {
+    #menu {
+        background-color: white;
+        padding-left: 60px;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+
+
+}
+
 @media (min-width: 800px) {
 
-    .header {
+    .scroll {
+        background-color: pink;
+    }
+
+
+    #navbar {
         overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #navbar a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+    }
+
+    .logo {
+        float: left;
     }
 
     #menuknap {
@@ -114,9 +151,6 @@ img {
         border-radius: 4px;
         font-family: 'Roboto Condensed', sans-serif;
     }
-
-
-
 
     #menu {
         float: right;

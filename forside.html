@@ -10,15 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 
     <style>
+        #first_section img {
+            width: 250px;
+            margin-bottom: 0;
+            padding-top: 90px;
+        }
+
         #first_section {
             text-align: center;
         }
 
-        h3 {
+        #second_section {
+            text-align: center;
+        }
+
+        #second_section img {
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+        .billeder a:hover {
+            color: pink;
+        }
+
+        .billeder a {
             text-align: center;
             text-transform: uppercase;
             font-family: 'Roboto Condensed', sans-serif;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
         }
+
 
         h1 {
             font-family: 'Roboto Condensed', sans-serif;
@@ -30,7 +53,7 @@
 
         h2 {
             font-family: 'Roboto Condensed', sans-serif;
-            padding-bottom: 30px;
+            padding-bottom: 10px;
         }
 
         @media (min-width: 800px) {
@@ -51,7 +74,7 @@
 
     <header>
 
-        <div class="header">
+        <div id="navbar">
 
             <a href="forside.html" class="logo"><img src="billeder/logo_logo.png" alt="logo"></a>
 
@@ -64,6 +87,7 @@
                 <li><a href="kontakt.html">Kontakt</a></li>
             </div>
 
+
         </div>
 
     </header>
@@ -71,7 +95,7 @@
     <main>
 
         <section id="first_section">
-            <h1>Safiya Thil</h1>
+            <img src="billeder/forside_Forside.png" alt="forsidebillede">
             <h2>Portfolio</h2>
         </section>
 
@@ -79,22 +103,22 @@
         <section id="second_section">
             <div class="billeder">
 
-                <img src="billeder/placeholder.jpg" alt="placeholder">
-                <h3>Om mig</h3>
+                <a href="om.html"><img src="billeder/placeholder.jpg" alt="placeholder"></a>
+                <a href="om.html">Om mig</a>
 
             </div>
 
             <div class="billeder">
 
-                <img src="billeder/placeholder.jpg" alt="placeholder">
-                <h3>Video</h3>
+                <a href="foto.html"><img src="billeder/placeholder.jpg" alt="placeholder"></a>
+                <a href="foto.html">Foto</a>
 
             </div>
 
             <div class="billeder">
 
-                <img src="billeder/placeholder.jpg" alt="placeholder">
-                <h3>Foto</h3>
+                <a href="video.html"><img src="billeder/placeholder.jpg" alt="placeholder"></a>
+                <a href="video.html">Video</a>
 
             </div>
 
